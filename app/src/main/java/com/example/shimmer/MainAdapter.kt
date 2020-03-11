@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.shimmer_placeholder_layout.view.*
 
 
 class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
+
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: User) {
             itemView.textViewUserName.text = user.name

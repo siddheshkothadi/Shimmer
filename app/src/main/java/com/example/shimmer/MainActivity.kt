@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupAPICall() {
         AndroidNetworking.initialize(applicationContext)
-        AndroidNetworking.get("https://5e510330f2c0d300147c034c.mockapi.io/users")
+        AndroidNetworking.get("https://5e6890f8d426c00016b7e095.mockapi.io/api/dogs/id")
             .build()
             .getAsObjectList(User::class.java, object : ParsedRequestListener<List<User>> {
                 override fun onResponse(users: List<User>) {
