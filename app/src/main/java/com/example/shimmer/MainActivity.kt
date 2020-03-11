@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onError(anError: ANError) {
                     shimmerFrameLayout.visibility = View.GONE
-                    Toast.makeText(this@MainActivity, "Something Went Wrong", Toast.LENGTH_LONG)
+                    Toast.makeText(this@MainActivity, "Something Went Wrong\nCheck Your Internet Connection!", Toast.LENGTH_LONG)
                         .show()
                 }
             })
